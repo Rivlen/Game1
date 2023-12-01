@@ -10,11 +10,14 @@ def guess_the_number():
                 break
             except ValueError:
                 print("It's not a number!")
+
         if guess < roll:
             print("Too small!")
             continue
+
         elif guess > roll:
             print("Too big!")
+
         elif guess == roll:
             print("You win!")
             return None
